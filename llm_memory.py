@@ -29,7 +29,7 @@ text_chunks = text_splitter.split_documents(document)
 
 embedding_model = HuggingFaceEmbeddings(model_name = "sentence-transformers/all-MiniLM-L6-v2")
 
-db = FAISS.from_documents(text_chunks,embedding=embedding_model)
+db = FAISS.from_documents(texts,_chunkembedding=embedding_model)
 db.save_local(VECTORSTORE_PATH)
 
 

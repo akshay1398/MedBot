@@ -14,4 +14,4 @@ numpy
 pandas
 requests
 beautifulsoup4
-langchain_groq
+langchain_groqs
